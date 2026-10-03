@@ -126,7 +126,7 @@
         }
 
         // ۳. فعال‌سازی سنسور GPS دستگاه
-        topoMap.locate({ watch: true, enableHighAccuracy: true });
+        topoMap.locate({ watch: true, enableHighAccuracy: false, timeout: 10000 });
 
         // ۴. رویداد دریافت موفق موقعیت
         topoMap.on('locationfound', (event) => {
